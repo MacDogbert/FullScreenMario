@@ -535,8 +535,6 @@ function intoPipeVert(me, pipe, transport) {
   }, timer);
 }
 function intoPipeHoriz(me, pipe, transport) {
-  // If Mario isn't resting or swimming, he shouldn't be allowed to pipe
-  if(!me.resting || !map.underwater) return;
   
   pipePreparations(me);
   switchContainers(me, characters, scenery);
